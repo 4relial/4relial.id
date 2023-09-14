@@ -22,6 +22,7 @@
             padding: 0;
             width: 100%;
             height: 100vh;
+            overflow: hidden; 
         }
 
         #particles-js {
@@ -129,6 +130,11 @@
                 width: 100%;
                 margin-bottom: 10px;
                 /* Untuk memberi jarak antara tombol-tombol */
+            }
+            body {
+                height: 100vh;
+                overflow: visible;
+                /* Hapus tinggi yang diberikan pada perangkat mobile */
             }
         }
     </style>
