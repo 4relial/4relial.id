@@ -1,9 +1,6 @@
 {
     "routes": [
-        {
-            "src": "/(.*)",
-            "status": 404,
-            "dest": "https://404.4relial.id"
-        }
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "status": 404, "dest": "https://404.4relial.id" }
     ]
-}
+  }
