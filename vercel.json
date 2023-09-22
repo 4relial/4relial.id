@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "status": 301,
+        "headers": {
+          "Location": "https://404.4relial.id"
+        }
+      }
+    ]
+  }
+  
