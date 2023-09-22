@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "status": 301,
+        "status": 404,
         "headers": {
           "Location": "https://404.4relial.id"
         }
