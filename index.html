@@ -9,6 +9,7 @@
     <title>4Relial ID</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="4Relial-ID" />
+    <script defer src="script.js"></script>
     <meta property="og:description" content="M Ilham Ari Fahmi" />
     <meta property="og:image" content="https://4relial.vercel.app/image_small.jpg" />
     <link rel="icon" href="https://4relial.vercel.app/favicon.ico" type="image/x-icon" />
@@ -22,7 +23,7 @@
             padding: 0;
             width: 100%;
             height: 100vh;
-            overflow: hidden; 
+            overflow: hidden;
         }
 
         #particles-js {
@@ -75,6 +76,18 @@
                 transform: translateY(0);
             }
         }
+
+
+        #visit-count {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
 
         /* Animasi datang dari bawah */
         @keyframes slideInUp {
@@ -131,6 +144,7 @@
                 margin-bottom: 10px;
                 /* Untuk memberi jarak antara tombol-tombol */
             }
+
             body {
                 height: 100vh;
                 overflow: visible;
@@ -148,7 +162,7 @@
         <img src="image_small.jpg" alt="Icon" class="img-fluid rounded-circle animated-icon" width="150">
         <h1 class="mt-3 animated-intro-text">M Ilham Ari Fahmi</h1>
         <p class="mt-4 animated-intro-text">
-            Backend Dev.
+            Hello, I'm a Backend Developer.
         </p>
 
         <!-- <div class="horizontal-text mt-4">
@@ -168,7 +182,6 @@
             <button onclick="window.location.href='https://portofolio.4relial.id'"
                 class="btn btn-danger btn-block">Portofolio</button>
         </div>
-
     </div>
 
     <!-- Tambahkan link JavaScript Bootstrap di sini (opsional) -->
@@ -230,7 +243,9 @@
             },
         });
     </script>
-
+    <div id="visit-count" class="mt-4 text-center text-white">
+        <div class="website-counter"></div>
+    </div>
 </body>
 
 </html>
