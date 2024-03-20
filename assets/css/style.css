@@ -49,10 +49,14 @@
     #linksbutton {
         flex-direction: column; /* Tombol-tombol ditampilkan secara vertikal */
         align-items: center; /* Tombol-tombol diatur di tengah secara horizontal */
+        margin: 27px 1px;
     }
 
     .links {
         width: auto; /* Tombol-tombol mengambil lebar yang sesuai dengan konten */
+        margin: 5px 0px;
+        min-width: 60vw;
+        max-width: calc(100% - 10px);
     }
 }
 
