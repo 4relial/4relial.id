@@ -1,251 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tambahkan link CSS Bootstrap di sini -->
-    <meta httpEquiv="Content-Type" content="text/html; charset=windows-1252" />
-    <title>4Relial ID</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="4Relial-ID" />
-    <script defer src="script.js"></script>
-    <meta property="og:description" content="M Ilham Ari Fahmi" />
-    <meta property="og:image" content="https://4relial.vercel.app/image_small.jpg" />
-    <link rel="icon" href="https://4relial.vercel.app/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Katou Megumi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta property="og:title" content="4relial ID" />
+    <meta property="og:description" content="M Ilham Ari Pahmi Personal Website" />
+    <meta property="og:image" content="https://katou.my.id/assets/yuuka.png" />
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <style>
-        /* Gaya latar belakang */
-        body {
-            position: relative;
-            background-color: #000;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
         #particles-js {
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 99%;
+            height: 95%;
             z-index: -1;
             /* Membawa partikel ke belakang konten */
-        }
-
-        /* Centering content */
-        .center-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            /* Menggunakan tinggi viewport untuk mengisi seluruh tinggi layar */
-        }
-
-        /* Gaya tautan teks (link) */
-        .text-link {
-            text-decoration: underline;
-            color: #ffffff;
-            /* Warna teks putih */
-            cursor: pointer;
-        }
-
-        /* Gaya teks horizontal */
-        .horizontal-text {
-            display: flex;
-            align-items: center;
-        }
-
-        /* Gaya pembagi */
-        .divider {
-            margin: 0 10px;
-            /* Jarak di antara pembagi */
-        }
-
-        /* Animasi datang */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-
-        #visit-count {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 10px 0;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-
-        /* Animasi datang dari bawah */
-        @keyframes slideInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Gaya ikon dengan animasi datang dari bawah */
-        .animated-icon {
-            animation: slideInUp 1s ease-in-out;
-            /* Animasi datang dengan durasi 1 detik */
-        }
-
-        /* Gaya teks perkenalan dengan animasi datang dari bawah */
-        .animated-intro-text {
-            text-align: center;
-            animation: slideInUp 1s ease-in-out;
-            /* Animasi datang dengan durasi 1 detik */
-        }
-
-        /* Gaya teks tautan URL dengan animasi datang dari bawah */
-        .animated-text-link {
-            text-decoration: underline;
-            color: #ffffff;
-            cursor: pointer;
-            animation: slideInUp 1s ease-in-out;
-            /* Animasi datang dengan durasi 1 detik */
-        }
-
-        .copyright {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            color: #ffffff;
-            padding: 10px 0;
-            /* Padding atas dan bawah untuk memberikan ruang di sekitar teks copyright */
-            opacity: 0.7;
-            /* Nilai opacity yang lebih rendah membuat teks menjadi transparan */
-        }
-
-        /* CSS untuk perangkat mobile */
-        @media (max-width: 767px) {
-            .vertical-button button {
-                display: block;
-                width: 100%;
-                margin-bottom: 10px;
-                /* Untuk memberi jarak antara tombol-tombol */
-            }
-
-            body {
-                height: 100vh;
-                overflow: visible;
-                /* Hapus tinggi yang diberikan pada perangkat mobile */
-            }
         }
     </style>
 </head>
 
 <body>
-    <!-- Latar belakang partikel -->
-    <div id="particles-js"></div>
-
-    <div class="center-content text-white">
-        <img src="image_small.jpg" alt="Icon" class="img-fluid rounded-circle animated-icon" width="150">
-        <h1 class="mt-3 animated-intro-text">M Ilham Ari Fahmi</h1>
-        <p class="mt-4 animated-intro-text">
-            Hello, I'm a Backend Developer.
-        </p>
-
-        <!-- <div class="horizontal-text mt-4">
-            <a href="https://www.calestial.biz.id" class="text-link animated-text-link">Whatsapp-Bot</a>
-            <span class="divider">|</span>
-            <a href="https://www.instagram.com/ward_d_syah" class="text-link animated-text-link">API</a>
-            <span class="divider">|</span>
-            <a href="https://www.instagram.com/ward_d_syah" class="text-link animated-text-link">Portofolio</a>
-        </div> -->
-        <div class="vertical-button mt-4" id="button-container">
-            <button onclick="window.location.href='https://github.com/4relial'"
-                class="btn btn-primary btn-block">Github</button>
-            <button onclick="window.location.href='https://bot.4relial.id'"
-                class="btn btn-success btn-block">WhatsApp-Bot</button>
-            <button onclick="window.location.href='https://api.4relial.id'" class="btn btn-warning btn-block">Rest
-                API</button>
-            <button onclick="window.location.href='https://portofolio.4relial.id'"
-                class="btn btn-danger btn-block">Portofolio</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>BOT PENUH!</h2>
+            <p>Silakan gunakan Aris/Theresa/Kafka!</p>
         </div>
     </div>
+    <style>
+        .blue-color {
+            color: blue;
+        }
 
-    <!-- Tambahkan link JavaScript Bootstrap di sini (opsional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        .green-color {
+            color: green;
+        }
 
-    <!-- Tambahkan library particles.js di sini -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        .teal-color {
+            color: teal;
+        }
+
+        .yellow-color {
+            color: yellow;
+        }
+
+        .red-color {
+            color: red;
+        }
+    </style>
+    <div id="particles-js"></div>
+    <div class="center-content">
+        <img id="Photo" src="assets/yuuka.png" alt="Yuuka">
+
+        <spam id="Name">
+            <h1 class="mt-3 animated-intro-text">M Ilham Ari Fahmi</h1>
+            Hello, I'm a Backend Developer.
+        </spam>
+
+        <div id="linksbutton" class="pl-4 pr-4">
+            <a id="link2" class="links" href="https://github.com/4relial" target="_blank"
+                style="border-radius: 15px;">🐱 &nbsp; Github</a>
+            <a id="link4" class="links" href="https://bot.4relial.id" target="_blank" style="border-radius: 15px;">🍃
+                &nbsp; WhatsApp Bot</a>
+            <a id="link4" class="links" href="https://api.4relial.id" target="_blank" style="border-radius: 15px;">🍃
+                &nbsp; Rest API</a>
+            <a id="link4" class="links" href="https://portofolio.4relial.id" target="_blank"
+                style="border-radius: 15px;">🍃 &nbsp; Portofolio</a>
+        </div>
+
+        <spam id="footertext"> Made with ❤️ By <a href="https://portofolio.4relial.id" style="color: #fff;">4relial</a>
+        </spam>
+    </div>
     <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 120, // Mengubah jumlah partikel
-                    "density": {
-                        "enable": true,
-                        "value_area": 1000
-                    }
-                },
-                "color": {
-                    "value": "#007bff" // Mengubah warna partikel menjadi biru (#007bff)
-                },
-                "shape": {
-                    "type": "circle", // Mengatur bentuk partikel menjadi bintang
-                    "stroke": {
-                        "width": 0,
-                        "color": "#ffffff"
-                    },
-                },
-                "opacity": {
-                    "value": 0.6, // Mengubah tingkat kejelasan partikel
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 0.5,
-                        "opacity_min": 0.3,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 7, // Mengubah ukuran partikel
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 5,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-            },
-            "interactivity": {
-                "events": {
-                    "onhover": {
-                        "enable": false, // Nonaktifkan efek saat mouse hover
-                        "mode": "repulse"
-                    }
-                },
-            },
-            "line_linked": {
-                "enable": false // Nonaktifkan jaring-jaring
-            },
+        document.getElementById("close-popup").addEventListener("click", function () {
+            document.getElementById("popup").style.display = "none";
         });
+
+        window.addEventListener('resize', function () {
+            var windowWidth = window.innerWidth;
+            var buttons = document.getElementsByClassName('links');
+
+            if (windowWidth < 700) {
+                var maxWidth = 0;
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = '100%';
+                    var buttonWidth = buttons[i].offsetWidth;
+                    if (buttonWidth > maxWidth) {
+                        maxWidth = buttonWidth;
+                    }
+                }
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = maxWidth + 'px';
+                }
+            } else {
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.width = 'auto';
+                }
+            }
+        });
+
+        // Call resize event initially to set button sizes on page load
+        window.dispatchEvent(new Event('resize'));
+
     </script>
-    <!-- <div id="visit-count" class="mt-4 text-center text-white">
-        <div class="website-counter"></div>
-    </div> -->
+
+
+    <div id="custom-popup" class="custom-popup">
+        <div class="popup-content2">
+            <span class="custom-close" id="custom-close-popup" style="display: none;">&times;</span>
+            <div class="modal-content rounded-0">
+                <div class="modal-body py-0">
+
+
+                    <div class="d-block main-content">
+                        <img src="https://4relial.github.io/thumbnail/yuuka/1.jpg" alt="Image" class="img-fluid"
+                            style="background-color: #b2fcff; max-height: 200px;">
+                        <div class="content-text p-2">
+
+                            <!-- <h4 class="mb-2 text-center">UNDER MAINTENANCE</h4> -->
+                            <!-- <h4 class="mb-2 text-center">PERHATIAN!</h4> -->
+                            <p class="mb-4">
+                            <p><strong>Arisu Software</strong></p>
+                            <ul>
+                                <li>Menyediakan jasa pembuatan web, webapp, aplikasi lainnya.</li>
+                                <li>Menyediakan jasa pembuatan custom bot WhatsApp dan Telegram</li>
+                                <li>Menyediakan jasa sewa bot WhatsApp</li>
+                            </ul>
+                            </p>
+                            <p><strong>Contact: <a
+                                        href="https://wa.me/6289515275674">+6289515275674</a></strong>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<!-- Tambahkan library particles.js di sini -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    // Mendapatkan referensi elemen yang akan muncul
+    var objek = document.getElementById('custom-close-popup');
+
+    // Fungsi untuk menampilkan objek setelah 10 detik
+    function tampilkanSetelahJeda() {
+        setTimeout(function () {
+            objek.style.display = 'block'; // Menampilkan objek setelah 10 detik
+        }, 4000); // Waktu dalam milidetik (10 detik = 10000 milidetik)
+    }
+
+    // Panggil fungsi untuk menampilkan objek setelah jeda waktu
+    tampilkanSetelahJeda();
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 120, // Mengubah jumlah partikel
+                "density": {
+                    "enable": true,
+                    "value_area": 1000
+                }
+            },
+            "color": {
+                "value": "#007bff" // Mengubah warna partikel menjadi biru (#007bff)
+            },
+            "shape": {
+                "type": "circle", // Mengatur bentuk partikel menjadi bintang
+                "stroke": {
+                    "width": 0,
+                    "color": "#ffffff"
+                },
+            },
+            "opacity": {
+                "value": 0.6, // Mengubah tingkat kejelasan partikel
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 0.5,
+                    "opacity_min": 0.3,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 7, // Mengubah ukuran partikel
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 5,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+        },
+        "interactivity": {
+            "events": {
+                "onhover": {
+                    "enable": false, // Nonaktifkan efek saat mouse hover
+                    "mode": "repulse"
+                }
+            },
+        },
+        "line_linked": {
+            "enable": false // Nonaktifkan jaring-jaring
+        },
+    });
+</script>
 
 </html>
