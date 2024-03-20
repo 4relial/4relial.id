@@ -56,7 +56,7 @@
         width: auto; /* Tombol-tombol mengambil lebar yang sesuai dengan konten */
         margin: 5px 0px;
         min-width: 60vw;
-        max-width: calc(100% - 10px);
+        max-width: 90vw;
     }
 }
 
