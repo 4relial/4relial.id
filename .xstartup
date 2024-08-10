@@ -1,0 +1,16 @@
+#!/bin/bash
+# Mencegah beberapa proses yang berjalan paralel
+xrdb $HOME/.Xresources
+
+# Memulai openbox
+openbox-session &
+
+# Menjalankan MicroEmulator
+java -cp user/user/besar/MicroEmulator.jar:koiori.jar org.microemu.app.Main com.silverknight.TemMidlet &
+
+# Menunggu agar MicroEmulator sepenuhnya terbuka
+sleep 5
+
+# Menggunakan wmctrl untuk memindahkan jendela MicroEmulator
+# Ganti 'MicroEmulator' dengan nama yang tepat dari jendela jika perlu
+wmctrl -r 'MicroEmulator' -e 0,-10,-10,-1,-1
